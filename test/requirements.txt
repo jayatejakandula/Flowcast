@@ -1,0 +1,41 @@
+# FlowCast v1.0 — Python dependencies
+# Recommended runtime: Python 3.11
+#
+# Install with:
+#   python -m pip install -r requirements.txt
+#
+# PyTorch is the selected deep-learning framework for the LSTM/GRU module.
+# For NVIDIA CUDA acceleration on Windows, install the PyTorch build matching
+# your system using the official selector: https://pytorch.org/get-started/locally/
+# If you install a CUDA-specific build separately, keep the torch requirement below
+# aligned with that installed version.
+
+# Numerical computing and data handling
+numpy>=1.26,<3
+pandas>=2.2,<4
+scipy>=1.13,<2
+
+# Classical machine learning
+scikit-learn>=1.5,<2
+xgboost>=2.1,<4
+
+# Deep learning (LSTM / GRU)
+torch>=2.5,<3
+
+# Visualisation
+matplotlib>=3.8,<4
+seaborn>=0.13,<1
+plotly>=5.24,<7
+
+# Dashboard
+streamlit>=1.41,<2
+
+# Notebooks and VS Code Jupyter support
+jupyter>=1.1,<2
+ipykernel>=6.29,<8
+
+# Configuration, model persistence, progress, and testing
+PyYAML>=6.0,<7
+joblib>=1.4,<2
+tqdm>=4.66,<5
+pytest>=8.0,<10
